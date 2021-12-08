@@ -1,0 +1,181 @@
+.home{
+    height: 104vh;
+
+    
+   
+    background-image: url(../assets/home/background-home-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    @include breakpoint-up(medium){
+        background: url(../assets/home/background-home-tablet.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    @include breakpoint-up(large){
+       
+        background: url(../assets/home/background-home-desktop.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+   
+    &__hero{
+            text-align: center;
+            @include flex(column, center, center);
+
+            @include breakpoint-up(large){
+                @include flex(row, space-between, center);
+                margin-top: 27.89vh;
+                margin-left: 11.46vw;
+                margin-right: 11.46vw;
+            }
+
+
+        &__text{
+
+                width: 87.2vw;
+                height: 41.4vh;
+                color:white;
+                margin-top: 7.2vh;
+                @include breakpoint-up(medium){
+                    width: 58.6vw;
+                    height: 32.62vh;
+                    margin-top: 10vh;
+                }
+                @include breakpoint-up(large){
+                    width: 28.125rem;
+                    height: 23.875rem;
+                    margin-top: 0;
+                    bottom:-2.6875rem;
+                }
+
+
+            &__h5 {
+                font-family: $font-barlow;
+                font-size: 1rem;
+                line-height: 1.1875rem;
+                font-weight: normal;
+                color: $light-color;
+
+                @include breakpoint-up(medium){
+                    font-size: 1.25rem;
+                    line-height: 1.5rem;
+                    letter-spacing: 0.211rem;
+                }
+
+                @include breakpoint-up(large){
+                    text-align: left;
+                 } 
+            }
+
+            &__h1 {
+                font-family: $font-bellfair;
+                font-size: 5rem;
+                line-height: 6.25rem;
+                font-weight: normal;
+                margin-top: 1rem;
+                color: $lighter-color;
+
+                @include breakpoint-up(medium){
+                    font-size: 9.375rem;
+                    line-height: 9.375rem;
+                    margin-top: 1.5rem;
+                }
+
+                @include breakpoint-up(large){
+                   
+                    line-height: 10.75rem;
+                    margin-top: 1.5rem;
+                    text-align: left;
+                }
+            }
+
+            &__p {
+                font-family: $font-barlow;
+                font-size: 0.9375rem;
+                line-height: 1.5625rem;
+                font-weight: normal;
+                margin-top: 1rem;
+                color: $lighter-color;
+
+                @include breakpoint-up(medium){
+                    font-size: 1rem;
+                    line-height: 1.75rem;
+                    margin-top: 1.5rem;
+                }
+
+                @include breakpoint-up(large){
+                    font-size: 1.125rem;
+                    line-height: 2rem;
+                    text-align: left;
+                    margin-top: 1.5rem;
+                 } 
+            }
+        }
+
+        &__circle {
+
+            margin-top: 12.14vh;
+            height:9.375rem;
+            width:9.375rem;
+            background: white;
+
+            @include breakpoint-up(medium){
+                margin-top: 15.23vh;
+                height:15.125rem;
+                width:15.125rem;
+            }
+
+            @include breakpoint-up(medium){
+               
+                height:17.125rem;
+                width:17.125rem;
+                
+            }
+            @include breakpoint-up(large){
+                bottom: 0;
+                margin-top: 0;
+                align-self: flex-end;
+            }
+
+            @include circle();
+
+
+            &__h5{
+
+                font-family: $font-bellfair;
+                
+                font-weight:$font-normal;
+                font-size: 1.25rem;
+                line-height: 1.4375rem;
+               
+                
+                text-align: center;
+                letter-spacing: 0.078125rem;
+                
+                color:$dark-color;
+                
+                @include vertical-align();
+
+                @include breakpoint-up(medium){
+                    font-size: 2rem;
+                    line-height: 2.3125rem;
+                    letter-spacing: 0.125rem;
+                }
+            }
+
+            &:hover{
+                box-shadow: 0 0 0 3.5rem rgba(255,255,255, 0.1);
+
+                @include breakpoint-up(medium){
+                    box-shadow: 0 0 0 4.5rem rgba(255,255,255, 0.1);
+                }
+               @include breakpoint-up(large){
+                box-shadow: 0 0 0 5.5rem rgba(255,255,255, 0.1);
+               }
+                
+            }
+        }
+    }
+    
+}

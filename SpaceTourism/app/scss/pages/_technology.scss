@@ -1,0 +1,297 @@
+.technology {
+    height: 104vh;
+    
+
+    
+   
+    background-image: url(../assets/technology/background-technology-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    @include breakpoint-up(medium){
+        background: url(../assets/technology/background-technology-tablet.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    @include breakpoint-up(large){
+       
+        background: url(../assets/technology/background-technology-desktop.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }  
+
+    &__hero {
+
+        &__content {
+
+            margin-top: 4.51vh;
+            @include flex(column, center, center);
+            @include breakpoint-up(medium){
+                margin-top: 5.86vh;
+            }
+            @include breakpoint-up(large){
+                @include flex(row-reverse, space-between, center);
+                margin-left: 11.46vw;
+            }
+
+            &__image {
+
+                height: 23.94vh;
+                width: 100vw;
+                overflow: hidden;
+                @include breakpoint-up(medium){
+                    height: 30.27vh;
+
+                }
+                @include breakpoint-up(large){
+                 height: 100%;
+                  width:35.76vw; 
+                  position: relative;
+              }
+
+                &__capsule{
+                    content:url(../assets/technology/image-space-capsule-landscape.jpg);
+
+                    @include breakpoint-up(large){
+                        content:url(../assets/technology/image-space-capsule-portrait.jpg);
+                    }
+                  }
+
+                 &__spacesport{
+                   content:url(../assets/technology/image-spacesport-landscape.jpg) ;
+
+                   @include breakpoint-up(large){
+                    content:url(../assets/technology/image-spacesport-portrait.jpg);
+                }
+                 }
+
+                 &__vehicle{
+                   content:url(../assets/technology/image-launch-vehicle-landscape.jpg) ;
+
+                   @include breakpoint-up(large){
+                    content:url(../assets/technology/image-launch-vehicle-portrait.jpg);
+                }
+                 }
+
+
+              img {
+
+                  position: absolute;
+                  bottom: 0;
+                  width: 100%;
+
+
+                  @include breakpoint-up(large){
+
+                    position: relative;
+                }
+
+   
+                 
+              } 
+
+
+
+
+               
+                
+            
+                
+            }
+
+            &__text {
+                margin-top: 2.125rem;
+                @include flex(column, center, center);
+
+                @include breakpoint-up(medium){
+                   margin-top: 5.46vh;       
+                }
+
+                @include breakpoint-up(large){
+                    @include flex(row, center, center);  
+                    margin-top: 0; 
+                   
+                }
+
+                &__nav {
+                    @include flex(row, center, center);
+
+                    @include breakpoint-up(large){
+                        @include flex(column, center, start); 
+                        margin-right: 5.56vw;
+                        
+                    }
+                    span {
+                        content: '';
+                        //display: block;
+                        text-align: center;
+                        
+                        height: 2.5rem;
+                        width: 2.5rem;
+                        @include breakpoint-up(medium){
+                            height: 3.625rem;
+                            width: 3.625rem; 
+                        }
+                        @include breakpoint-up(medium){
+                            height: 5rem;
+                            width: 5rem; 
+                        }
+                        @include circle();
+
+                        
+                     //   background: black;
+                        border: 1px solid rgba(255, 255, 255, 0.25);
+                        
+                        a{  
+                            display: inline-block;
+                            @include vertical-align();
+
+                            font-family: $font-bellfair;
+                          
+                            font-weight: $font-normal;
+                            font-size: 1rem;
+                            line-height: 1.125rem;
+                            text-align: center;
+                            letter-spacing: 0.0625rem;
+
+                            @include breakpoint-up(medium){
+                                font-size: 1.5rem;
+                                line-height: 1.75rem;
+                                letter-spacing: 0.09375rem;
+                            }
+
+                            @include breakpoint-up(large){
+                                font-size: 2rem;
+                                line-height: 2.3125rem;
+                                letter-spacing: 0.125rem;
+                            }
+                        }
+
+                        &:not(:last-child){
+                            margin-right: 1rem;
+                            @include breakpoint-up(large){
+                                margin-right: 0rem;
+                                margin-bottom: 2rem;
+                            }
+                        }
+                        
+                        &:hover {
+                            border: 1px solid rgba(255, 255, 255, 1);
+                        }
+
+                        &:active {
+                            background: $lighter-color;
+                            color: $dark-color;
+                        }
+
+                        &.current {
+                            background: $lighter-color;
+                            a{
+                                color: $dark-color; 
+                            }
+                           
+                        }
+                    }
+                }
+
+                &__container {
+
+                    margin-top: 1.625rem;
+                
+                    text-align: center;
+                    @include flex(column, center, center);
+                    width:85.06vw;
+
+                    @include breakpoint-up(medium){
+                        margin-top: 4.3vh;
+                        width:59.60vw;
+                    }
+
+                    @include breakpoint-up(large){
+                        width: 32.64vw;
+                       align-items: flex-start;
+                       margin-top: 0;
+                       text-align: left;
+                       
+                    }
+
+                        &__txt {
+
+                            font-family: $font-barlow;
+                            text-transform: uppercase;
+                            font-weight: $font-normal;
+                            font-size: 0.875rem;
+                            line-height: 1.0625rem;
+                            /* identical to box height */
+
+                            //text-align: center;
+                            letter-spacing: 0.148rem;
+
+                            color: $light-color;
+
+                            @include breakpoint-up(medium){
+                                font-size: 1rem;
+                                line-height: 1.875rem;
+                                letter-spacing: 0.16875rem;
+                            }
+
+
+
+                        }
+                        
+                        &__title {
+                            margin-top: 0.5625rem;
+                            font-family: $font-bellfair;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 1.5rem;
+                            line-height: 1.75rem;
+                            /* identical to box height */
+                            text-transform: uppercase;
+                            text-align: center;
+                            text-transform: uppercase;
+                            
+                            color: $lighter-color;
+
+                            @include breakpoint-up(medium){
+                                font-size: 2.5rem;
+                                line-height: 2.875rem;
+                            }
+
+                            @include breakpoint-up(large){
+                                    margin-top: 1.22vh;
+                                    font-size: 3.5rem;
+                                    line-height: 4rem;
+                                    
+                            }
+                        }
+                    
+                        &__description {
+                            margin-top: 1rem;
+                            font-family: $font-barlow;
+                            font-weight: $font-normal;
+                            font-size: 0.9375rem;
+                            line-height: 1.5625rem;
+                            /* or 167% */
+                            
+                            //text-align: center;
+                            
+                            color: $light-color;
+
+                            @include breakpoint-up(medium){
+                                font-size: 1rem;
+                                line-height: 1.75rem;
+                            }
+                            @include breakpoint-up(large){
+                                margin-top: 1.89vh;
+                                font-size: 1.125rem;
+                                line-height: 2rem;
+                            }
+                        }
+                }
+
+
+            }
+        }
+    }
+}

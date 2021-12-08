@@ -1,0 +1,256 @@
+.crew {
+    height: 104vh;
+    
+  
+    background-image: url(../assets/crew/background-crew-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    @include breakpoint-up(medium){
+        background: url(../assets/crew/background-crew-tablet.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    @include breakpoint-up(large){
+       
+        background: url(../assets/crew/background-crew-desktop.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__hero{
+        
+
+        &__content {
+            
+            margin-top: 4.51vh;
+            margin-left: 6.4vw;
+            margin-right: 6.4vw;
+            @include flex(column ,center, center);
+
+            @include breakpoint-up(medium){
+                @include flex(column-reverse, space-between, center);
+                //bottom: 0;
+                //height: auto;
+            }
+
+            @include breakpoint-up(large){
+                @include flex(row-reverse, space-between, center);
+                //bottom: 0;
+                //height: auto;
+                margin-top: 0vh;
+                margin-left: 11.46vw;
+            }
+
+            &__image{
+                
+                width: 87.2vw;
+                @include flex(column ,center, center);
+               
+                @include breakpoint-up(medium){
+                    margin-top: 3.91vh;
+                   // height: 52vh;
+                   width: auto;
+                }
+
+
+
+                @include breakpoint-up(large){
+                    //margin-left: 5.65vw;
+                   // height: 52vh
+                   //width: 38.47vw;
+                
+                   margin-top: 0;
+                   
+                }
+
+               
+                img{
+                    
+                    height: 31.4vh;
+                    @include breakpoint-up(medium){
+                        
+                        height: 52vh;   
+                        bottom: 0;
+                    }
+                    @include breakpoint-up(large){
+                        
+                        height: 79.11vh;
+                        //max-width: 42.70vw;
+                        //      width:auto;   
+                        bottom: 0;
+                    }
+                    //width: 47.2vw;
+                }
+
+                &__line{
+                    content: '';
+                    background: $lighter-color;
+                    opacity: 0.25;
+                    width:100%;
+                    height: 0.0625rem;
+                    top: 0;
+
+                    @include breakpoint-up(medium){
+                        display: none;
+                    }
+                }
+            }
+
+
+
+            &__text{
+
+                margin-top: 4.51vh;
+
+                @include flex(column ,center, center);
+                @include breakpoint-up(medium){
+                    @include flex(column-reverse, center, center);
+                    margin-top: 5.86vh;
+                }
+
+                @include breakpoint-up(large){
+                    align-items: flex-start;
+                    //text-align: left;
+                    width: 42.63vw;
+                    margin-top: 0vh;
+                }
+
+                &__navdots{
+                    @include breakpoint-up(medium){
+                        margin-top: 3.91vh;
+                    }
+
+                    @include breakpoint-up(large){
+                        margin-top: 13.33vh;
+                    }
+                    a{
+                        &:not(:last-child){
+                            margin-right: 1rem;
+                        }
+                    }
+                    
+                    span{
+                        display: inline-flex;
+                        justify-content: center;
+                        content: '';
+                        height: 0.625rem;
+                        width: 0.625rem;
+                        @include circle();
+                        background: $lighter-color;
+                        opacity: 0.17;
+
+                        @include breakpoint-up(large){
+                            height: 0.9375rem;
+                            width: 0.9375rem;
+                        }
+
+                        &:hover{
+                            opacity: 0.5;
+                        }
+
+                        &:active{
+                            opacity: 1;
+                        }
+
+
+
+                        &.current {
+                            opacity: 1;
+                        }
+                    }
+                }
+
+
+                &__container {
+
+                    margin-top: 4.51vh;
+
+                    @include flex(column ,center, center);
+
+                    font-family: $font-bellfair;
+                    font-weight: $font-normal;
+                    color: $lighter-color;
+                    text-align: center;
+
+                    @include breakpoint-up(medium){
+                        margin-top: 0vh;
+                    }
+                    @include breakpoint-up(large){
+                        align-items: flex-start;
+                        text-align: left;
+                        margin-top: 0vh;
+                    }
+
+                    &__designation{
+
+                        font-size: 1rem;
+                        line-height: 1.125rem;
+                        text-transform: uppercase;      
+                        opacity: 0.5;
+
+                        @include breakpoint-up(medium){
+                            font-size: 1.5rem;
+                            line-height: 1.75rem;
+                        }
+
+                        @include breakpoint-up(large){
+                            font-size: 2rem;
+                            line-height: 2.3125rem;
+                        }
+
+
+                    }
+    
+                    &__name{
+                        margin-top: 1.127vh;
+                        font-size: 1.5rem;
+                        line-height: 1.75rem;
+                        text-transform: uppercase;
+
+                        @include breakpoint-up(medium){
+                            margin-top: 0.78125vh;
+                            font-size: 2.5rem;
+                            line-height: 2.875rem;
+                        }
+
+                        @include breakpoint-up(large){
+                            margin-top: 1.67vh;
+                            font-size: 3.5rem;
+                            line-height: 4rem;
+                        }
+                    
+                    }
+    
+                    &__description{
+                        margin-top: 2.25vh;
+                        font-family: $font-barlow;
+                        font-size: 0.9375rem;
+                        line-height: 1.5625rem;
+                        color: $light-color;
+                        /* or 167% */
+
+                        @include breakpoint-up(medium){
+                         
+                            font-size: 1rem;
+                            line-height: 1.75rem;
+                        }
+
+                        @include breakpoint-up(large){
+                            margin-top: 3vh;
+                            font-size: 1.125rem;
+                            line-height: 2rem;
+                            width: 30.83vw;
+                        }
+
+                       
+
+
+                    }
+
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,257 @@
+.destination{
+    
+    height: 104vh;
+
+    
+   
+    background-image: url(../assets/destination/background-destination-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    @include breakpoint-up(medium){
+        background: url(../assets/destination/background-destination-tablet.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    @include breakpoint-up(large){
+       
+        background: url(../assets/destination/background-destination-desktop.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__hero {
+
+
+
+        &__content {
+            margin-top: 3.76vh;
+            margin-left: 6.4vw;
+            margin-right: 6.4vw;
+            @include flex(column, center,center);
+
+            @include breakpoint-up(medium){
+                margin-top: 5.86vh;
+                margin-left: 12.76vw;
+                margin-right: 12.76vw;
+           
+            }
+
+            @include breakpoint-up(large){
+                @include flex(row, space-between,'');
+                margin-top: 7.11vh;
+                margin-left: 15.97vw;
+                margin-right: 11.319vw;
+            }
+
+            &__image{
+                img {
+                    height: 45.33vw;
+                    width: 45.33vw;
+
+                    @include breakpoint-up(medium){
+
+                    }
+                    @include breakpoint-up(large){
+                        height: 30.90vw;
+                        width: 30.90vw; 
+                        margin-right: 10.90vw;
+                    }
+                }
+            }
+
+            &__description {
+                margin-top: 3.06vh;
+                @include flex(column, center,center);
+                @include breakpoint-up(medium){
+                    margin-top: 5.176vh;
+                }
+                @include breakpoint-up(large){
+                    margin-top: 0;
+                    @include flex(column, center,start)
+                }
+                &__navigation {
+                    height: 1.75rem;
+                    font-family: $font-barlow;  
+                    font-weight: $font-normal;
+                    font-size: 0.875rem;
+                    line-height: 1.0625rem;
+                    letter-spacing: 0.148rem;
+                    text-transform: uppercase;
+                    @include breakpoint-up(medium){
+                        height: 2.125rem;
+                        font-size: 1rem;
+                        line-height: 1.1875rem;
+                        letter-spacing: 0.16875rem;
+                    }
+
+                    color:$light-color;
+                    a {
+                        &:not(:last-child){
+                            margin-right: 7.2vw;
+
+                            @include breakpoint-up(medium){
+                                margin-right: 2.25rem;
+                            }
+                        }
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            opacity: 0;
+                            visibility: hidden;
+                            top:calc(1.75rem - 0.1875rem);
+                            left: 0;
+                            height: 0.1875rem;
+                            width: 100%;
+                            background: $lighter-color;
+                            @include breakpoint-up(medium){
+                                top:calc(2.125rem - 0.1875rem);
+                            }
+
+                        }
+                        &:hover::after{
+                            opacity: 0.5;
+                            visibility: visible;
+
+                        }
+
+                        &.current::after{
+                            opacity: 1;
+                            visibility: visible;
+                        }
+
+                    }
+                }
+
+                &__h1 {
+                    margin-top: 2.353vh;
+                    font-family: $font-bellfair;
+                    
+                    font-weight: $font-normal;
+                    font-size: 3.5rem;
+                    line-height: 4rem;
+                    color: $lighter-color;
+                    text-transform: uppercase;
+
+                    @include breakpoint-up(medium){
+                        margin-top: 3.125vh;
+                        font-size: 5rem;
+                        line-height: 5.75rem;
+                    }
+
+
+                    @include breakpoint-up(large){
+                        margin-top: 4.11vh;
+                        font-size: 6.25rem;
+                        line-height: 7.1875rem;
+                        text-align: left;
+                    }
+                }
+
+                &__p {
+                    font-family: $font-barlow;
+                    font-weight: $font-normal;
+                    font-size: 0.9375rem;
+                    line-height: 1.5625rem;
+                    text-align: center;
+                    color: $light-color;
+
+                    margin-top:0.12vh;
+
+                    @include breakpoint-up(medium){
+                        font-size: 1rem;
+                        line-height: 1.75rem;
+                        margin-left: 12.76vw;
+                        margin-right: 12.76vw;
+                        margin-top:0.78vh;
+                    }
+                    @include breakpoint-up(large){
+                        font-size: 1.125rem;
+                        line-height: 2rem;
+                        margin-left: 0vw;
+                        margin-right: 0vw;
+                        margin-top:1.55vh;
+                        text-align: left;
+                    }
+                }
+
+                &__line {
+                        content: '';
+                        width: 80%;
+                        background: $lighter-color;
+                        opacity: 0.25;
+                        height: 0.0625rem;
+                        margin-top: 3.765vh;
+
+                        @include breakpoint-up(medium){
+                            margin-top: 4.79vh
+                        }
+
+                        @include breakpoint-up(large){
+                            width:110%;
+                            margin-top: 6vh
+                        }
+                }
+
+                &__stats {
+                    text-align: center;
+                    margin-top: 3.66vh;
+                    font-weight: $font-normal;
+                    text-transform: uppercase;
+                    width: 100%;
+                    
+                    @include flex(column, center, center);
+
+                    @include breakpoint-up(medium){
+                        @include flex(row, center, '');
+                        margin-top: 0;
+                        padding-top: 2.73vh;
+                    } 
+                    
+                    @include breakpoint-up(large){
+                        justify-content: flex-start;
+                    }
+
+                    h5{
+                        font-family: $font-barlow;
+                        font-size: 0.875rem;
+                        line-height: 1.0625rem;
+                        color: $light-color; 
+                        letter-spacing: 0.148rem;
+                    }
+
+                    h2{
+                        font-family: $font-bellfair;
+                        font-size: 1.75rem;
+                        line-height: 2rem;
+                        color: $lighter-color;
+                        margin-top: 1.41vh;
+                        @include breakpoint-up(medium){
+                            margin-top: 1.17vh;
+                        }
+                        
+                    } 
+
+                    &__distance {
+                        @include breakpoint-up(medium){
+                            margin-right: 5%;
+                        }
+                     
+                    }
+
+                    &__time {
+                        margin-top: 3.76vh;
+
+                       
+
+                        @include breakpoint-up(medium){
+                            margin-top: 0;
+                            margin-left: 5%;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
