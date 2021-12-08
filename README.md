@@ -121,4 +121,4 @@ I would like to thank the whole  YouTube Coding Community for putting out the fr
 a lot in making this project from scratch.
 
 ## How to run Project
-Install Live Server Extension on VSCode and go to directory "/SpaceTourism/template/index.html and run the live server by clicking on its icon"
+Install Live Server Extension on VSCode and go to directory "/SpaceTourism/template/index.html" and run the live server by clicking on its icon
