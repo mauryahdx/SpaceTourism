@@ -43,7 +43,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/mauryahdx/SpaceTourism)
-
+- Deployed Project URL: [SpaceTourism](https://mauryahdx.github.io/SpaceTourism/) 
 
 ## My process
 
