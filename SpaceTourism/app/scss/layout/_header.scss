@@ -47,7 +47,7 @@
         //only displaying linfor desktop
         @include breakpoint-up(large){
 
-            position: fixed;
+            position: absolute;
             display: inline-flex;
             height: 2px;
             max-width: 30rem;

@@ -1,5 +1,5 @@
 .home{
-    height: 104vh;
+    height: 100vh;
 
     
    
@@ -25,7 +25,7 @@
 
             @include breakpoint-up(large){
                 @include flex(row, space-between, center);
-                margin-top: 27.89vh;
+                margin-top: 20.89vh;
                 margin-left: 11.46vw;
                 margin-right: 11.46vw;
             }

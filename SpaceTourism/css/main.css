@@ -169,7 +169,7 @@ a {
 
 @media (min-width: 64em) {
   .header__line {
-    position: fixed;
+    position: absolute;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -486,7 +486,7 @@ a {
 }
 
 .home {
-  height: 104vh;
+  height: 100vh;
   background-image: url(../assets/home/background-home-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -540,7 +540,7 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 27.89vh;
+    margin-top: 20.89vh;
     margin-left: 11.46vw;
     margin-right: 11.46vw;
   }
