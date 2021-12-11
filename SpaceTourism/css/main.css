@@ -677,7 +677,7 @@ a {
   }
 }
 
-.home__hero__circle__h5 {
+.home__hero__circle__h2 {
   font-family: "Bellefair", serif;
   font-weight: 400;
   font-size: 1.25rem;
@@ -691,7 +691,7 @@ a {
 }
 
 @media (min-width: 40em) {
-  .home__hero__circle__h5 {
+  .home__hero__circle__h2 {
     font-size: 2rem;
     line-height: 2.3125rem;
     letter-spacing: 0.125rem;
