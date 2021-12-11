@@ -29,15 +29,34 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-![](./0.png)
-![](./1.png)
-![](./2.png)
-![](./3.png)
-![](./4.png)
-![](./5.png)
-![](./6.png)
-![](./7.png)
+Home (Mobile)
+
+![](./homemob.png) 
+
+Navigation (Mobile)
+
+![](./navmob.png)
+
+Crew (Ipad)
+
+![](./ipad.png)
+
+Home (Laptop) 
+
+![](./laphome.png)
+
+Crew (Laptop) 
+
+![](./lapcrew.png)
+
+Planet (Laptop) 
+
+![](./lappalnet.png)
+
+Technology (Laptop) 
+
+![](./laptech.png)
+
 
 
 ### Links
