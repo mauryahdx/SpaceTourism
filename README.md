@@ -51,7 +51,7 @@ Crew (Laptop)
 
 Planet (Laptop) 
 
-![](./lappalnet.png)
+![](./lapplanet.png)
 
 Technology (Laptop) 
 
