@@ -648,6 +648,8 @@ a {
   height: 9.375rem;
   width: 9.375rem;
   background: white;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
   border-radius: 100%;
 }
 
@@ -670,8 +672,8 @@ a {
   .home__hero__circle {
     bottom: 0;
     margin-top: 0;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
   }
 }
 
